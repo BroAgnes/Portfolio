@@ -18,6 +18,7 @@ html {
     background-size: cover;
     color: var(--text-primary);
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
