@@ -1,0 +1,411 @@
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    --text-primary: #e0d6ec;
+    --text-secondary: #5c2a9d;
+    --text-third: #b9277a;
+    --bg-primary: #06061b;
+    --bg-secondary: #8d135a;
+}
+
+html { 
+    background: url(images/background-img/background-image.jpg) no-repeat center center fixed; 
+    box-shadow: inset 10000px 0 0 0 rgba(0, 0, 0, 0.2);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: var(--text-primary);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* All Page */
+
+.container {
+    width:93%;
+    background-color: rgba(6, 6, 27,0.95);
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 2%;
+    text-align: center;
+    min-width: 500px;
+}
+
+/* All Page */
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+}
+
+/* Scrollbar */
+
+
+
+/* Navigation Bar */
+
+#navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 150ms ease;
+}
+
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.nav-item {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 300ms ease-out;
+}
+
+
+
+.nav-icon {
+    font-size: 2rem;
+    min-width: 2rem;
+    margin-left: 1.5rem;
+}
+
+
+
+.nav-link:hover {
+    color: var(--text-third);
+    background-color: #0d0d3f ;
+    
+}
+
+/* Navigation Bar */
+
+/* logo */
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+}
+
+.logo-icon {
+    transform: rotate(0deg);
+    transition: transform 150ms;
+    font-size: 2rem;
+    min-width: 2rem;
+    margin-left: 1.5rem;
+}
+
+#navbar:hover .logo-icon {
+    transform: rotate(-360deg);
+}
+
+/*logo */
+
+
+
+
+/* Welcome Section */
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-content {
+    text-align: center;
+}
+
+/* Welcome Section */
+
+
+/* Headers */
+.big-header {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom:1.5rem;
+}
+
+.small-header {
+    font-family:'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Headers */
+
+/* Project Section */
+
+.project-img {
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.languages-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.languages-item {
+    margin-top: 0.5rem;
+}
+
+.languages-icon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+
+
+/* Project Section */
+
+/* Contact Section */
+
+#contact-form {
+    max-width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "firstName lastName"
+    "email phone"
+    "message message"
+    "button .";
+    gap: 1rem 2rem;
+}
+
+#container-firstName {
+    grid-area:firstName;
+}
+
+#container-lastName {
+    grid-area:lastName;
+}
+
+#container-email {
+    grid-area:email;
+}
+
+#container-phone {
+    grid-area: phone;
+}
+
+#container-message {
+    grid-area: message;
+}
+
+#message {
+    padding: 0.5rem;
+}
+
+#submit {
+    grid-area: button;
+    max-width: 40%;
+    min-height: 2rem;
+    background-color: var(--text-secondary);
+    font-family:'Orbitron', sans-serif;
+    color: var(--text-primary);
+    font-weight: 400;
+    border: none;
+    transition: background-color 150ms ease;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--text-third);
+}
+
+.contact-cel {
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+}
+
+.input-label {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info {
+    padding: 0.2rem;
+    outline: none;
+    min-height: 2rem;
+    border-radius: 0.5rem;
+    background:none;
+    border:none;
+    border-bottom: 2px solid var(--text-secondary);
+    border-top: 2px solid var(--text-secondary);
+    color: var(--text-primary);
+    resize: none;
+}
+
+
+/* Contact Section */
+
+
+/* footer */
+
+#footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#background-link {
+    text-decoration: none;
+    transition: color 150ms ease;
+}
+
+#background-link:hover {
+    color: var(--text-third);
+}
+
+#background-link, #copyright {
+
+    font-family:'Orbitron', sans-serif;
+    color: var(--text-primary);
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    main  {
+        margin: 0;
+        margin-bottom: 5rem;
+    }
+    #navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .link-text {
+
+        display:none;
+
+    }
+    
+    .nav-icon {
+        margin: 0;
+    }
+
+    #contact-form {
+        max-width: 93%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "firstName"
+        "lastName"
+        "email"
+        "phone"
+        "message"
+        "button";
+    }
+
+    #footer {
+        margin-bottom: 7rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        margin-left: 5rem;
+    }
+
+    .link-text {
+        margin: 0 auto;
+        display: inline-block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 150ms ease;
+    }
+
+    #navbar:hover {
+        width: 16rem;
+    }
+    
+    #navbar:hover .link-text {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    
+    
+}

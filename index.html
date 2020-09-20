@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3d846870a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Agnese Broka</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <div class="nav-link">
+            <i class="fab fa-angellist logo-icon"></i>
+            <span class="link-text">Agnese</span>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#welcome-section" class="nav-link">
+            <i class="fas fa-star nav-icon"></i>
+            <span class="link-text">About</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">
+            <i class="fas fa-lightbulb nav-icon"></i>
+            <span class="link-text">Projects</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contacts" class="nav-link">
+            <i class="fas fa-comment-dots nav-icon"></i>
+            <span class="link-text">Contacts</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-last">
+          <a href="#footer" class="nav-link">
+            <i class="fas fa-caret-square-down nav-icon"></i>
+            <span class="link-text">Footer</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="welcome-section">
+        <div id="welcome-content">
+          <h1 class="big-header">Hi, I am Agnese</h1>
+          <h2 class="small-header">RTA Student</h2>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+            <h2 class="small-header">Projects</h2>
+            <p>More can be seen in my <a href="https://github.com/BroAgnes" target="_blank">GitHub profile</a></p>
+          <div class="one-project">
+
+            <div class="front">
+              <img
+                src="images/projects-img/drum-kit-image.PNG"
+                alt="drum-kit-project-image"
+                class="project-img"
+              />
+              <h3 class="project-name">Drum Kit</h3>
+            </div>
+
+            <div class="back">
+              <div class="project-info">
+                <p class="project-description">Simple drum kit game.</p>
+                <div class="languages">
+                  <ul class="languages-list">
+                    <li class="languages-item">
+                      <i class="fab fa-js-square languages-icon"></i>JavaScript
+                    </li>
+                    <li class="languages-item">
+                      <i class="fab fa-css3-alt languages-icon"></i>CSS
+                    </li>
+                    <li class="languages-item">
+                      <i class="fab fa-html5 languages-icon"></i>HTML
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <section id="contacts">
+        <div class="container" id="container-contact">
+          <h2 class="small-header">Contact Me!</h2>
+          <form
+            id="contact-form"
+            action="mailto:agnese.broka99@inbox.lv"
+            method="POST"
+          >
+            <div class="contact-cel" id="container-firstName">
+              <label for="firstName" class="input-label">First Name:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                class="contact-info"
+              />
+            </div>
+            <div class="contact-cel" id="container-lastName">
+              <label for="lastName" class="input-label">Last Name:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                class="contact-info"
+              />
+            </div>
+            <div class="contact-cel" id="container-email">
+              <label for="email" class="input-label">E-Mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact-info"
+              />
+            </div>
+            <div class="contact-cel" id="conatainer-email">
+              <label for="phone" class="input-label">Phone:</label>
+              <input type="tel" id="phone" name="phone" class="contact-info" />
+            </div>
+            <div class="contact-cel" id="container-message">
+              <label for="message" class="input-label">Your Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                class="contact-info"
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit" />
+          </form>
+        </div>
+      </section>
+      <footer id="footer">
+        <a
+          href="https://www.freepik.com/vectors/background"
+          id="background-link"
+          >Background vector created by alicia_mb - www.freepik.com</a
+        >
+        <p id="copyright">© 2020 Agnese Broka.</p>
+      </footer>
+    </main>
+  </body>
+</html>
